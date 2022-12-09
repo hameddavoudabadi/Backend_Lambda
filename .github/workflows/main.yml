@@ -1,4 +1,4 @@
-name: deploy to lambda
+name: Deploy Lambda Function
 on:
   # Trigger the workflow on push or pull request,
   # but only for the main branch
@@ -20,4 +20,4 @@ jobs:
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: ${{ secrets.AWS_REGION }}
           function_name: lambda-cd
-          source: function.py
+          source: lambda-cd.py
