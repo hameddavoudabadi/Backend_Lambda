@@ -9,7 +9,7 @@ jobs:
 
   deploy_source:
     name: deploy lambda from source
-    runs-on: x86_64
+    runs-on: ubuntu-latest
     steps:
       - name: checkout source code
         uses: actions/checkout@v2
